@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div className='App'>
         <div id='background'>
-          <video loop muted autoPlay poster='still.png' id='background-video'>
+          <video loop muted autoPlay poster={require('./still.png')} id='background-video'>
             <source src={require('./350loop.mp4')} type='video/mp4'/>
           </video>
         </div>
@@ -34,7 +34,7 @@ class InformationContainer extends Component {
     return (
       <div className='InformationContainer'>
         <p> 
-          <span style={{fontSize:25, fontWeight:'bold'}}>"It is not an investment if it is destroying the planet" - Vandana Shiva</span><br/><br/>
+          <span style={{fontSize:30, fontWeight:'bold'}}>"It is not an investment if it is destroying the planet" - Vandana Shiva</span><br/><br/>
           The stakes have never been higher – 2016 was again the hottest year on record.  Our changing climate is leading to 
           ever more dangerous extremes, from flood disasters to droughts, 
           heatwaves and storms.  It's time to fight back against the money that is causing this madness.<br/><br/>

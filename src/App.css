@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Chivo');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End of reset */
+
+#background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background: black;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#gdm-logo {
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.Header {
+  font-size: 70px;
+  padding: 10px;
+  margin-top: 250px;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  color: white;
+  background-color: #13667a;
+  padding: 20px;
+}
+
+.InformationContainer {
+  margin-top: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+}
+
+p {
+  font-family: 'Chivo';
+  font-size: 20px;
+  line-height: 30px;
+  padding: 30px;
+  margin-top: 10px;
+  margin: 20px;
+}
+
+.highlighted-text {
+  background-color: #ffa902;
+  font-weight: bold;
+}
+
+.Calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color:white;
+  font-family: 'Chivo';
+  padding: 50px;
+}
+
+.Event {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #02384a;
+  font-size: 30px;
+}
+
+.Event .description {
+  font-size: 20px;
+  padding: 20px;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #background-video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #background-video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #background {
+    background: url('./still.png') center center / cover no-repeat;
+  }
+
+  #background-video {
+    display: none;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+

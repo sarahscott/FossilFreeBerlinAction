@@ -2,7 +2,6 @@
   "name": "gdm",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://sarahscott.github.io/FossilFreeBerlinAction",
   "dependencies": {
     "gh-pages": "^0.12.0",
     "react": "^15.5.4",

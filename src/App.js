@@ -66,7 +66,7 @@ class InformationContainer extends Component {
                  location={'Bildungswerk Heinrich-Böll-Stiftung, Sebastianstr. 21, Kreuzberg - 18:00'}
                  description={'Können wir das Klimachaos noch vermeiden? In collaboration with Heinrich-Böll-Stiftung / Lotto-Stiftung'}
             />
-          <Event date={'10.5'} 
+          <Event date={'13.5'} 
                  title={'Demo: Break Free from Fossil Fuels'}
                  location={'Pariser Platz, Brandenburger Gate - 16:00'}
                  description={''}
